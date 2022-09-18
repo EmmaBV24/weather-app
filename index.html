@@ -2,13 +2,154 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
-  <body>
-    <h1>Hello Git</h1>
+<body> 
+<div class="container">
+      <form id="search-form">
+    <input class="search-bar" 
+    type="text" 
+    placeholder="Search for a city" 
+    autocomplete="off" 
+    autofocus="on" 
+    id="seach-text-input" 
+    />
+    <input type="submit" value="Search" />
+    </form>
+      <div class="current-info"> 
+          <div class="place-container">
+                <div class="country" id="country">
+                    <h2 id="city">Ottawa, Canada</h2>
+                </div>
+            </div>
+        <div class="date-container">
+          <div class="row">
+                <div class="col-6">
+                    <img src="https://s1.twnmm.com/images/fr_ca/icons/wxicons_large/6.png" 
+                 alt="weather icon" 
+                 class="w-icon"
+                     />
+                    Monday, September 2, 2022
+                </div>
+          </div>
+            
+             
+             <div class="col-6">
+            <div class="temperature" id="temperature">
+                <strong id="degree">20</strong> 
+                <span class="units">&#8451</span>
+                </div>
+            </div>
+          
+                <div class="others" id="current-weather-items">
+                    <div class="weather-item">
+                         
+                        <div>Precipitation</div>
+                        <div>95.2%</div>
+                    </div>
+                    <div class="weather-item">
+                         <div>Humidity</div>
+                         <div>73%</div>
+                    </div>
+                    <div class="weather-item">
+                         <div>Wind</div>
+                         <div>2 km/h</div>
+                         
+                    </div>
+                </div>
+        </div>
+    </div>
+        <div class="weather-forecast" id="weather-forecast">
+            <div class="weather-forecast-item">
+                <div class="day">
+                    <strong>Tue</strong>
+                </div>
+                <img src="https://s1.twnmm.com/images/fr_ca/icons/wxicons_large/4.png" 
+                alt="weather icon" 
+                class="w-icon"
+                width="70"
+                />
+                <div class="temp">
+                    <strong>25 &#176; C</strong>
+                        </div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">
+                    <strong>Wed</strong>
+                </div>
+                <img src="https://s1.twnmm.com/images/fr_ca/icons/wxicons_large/28.png" 
+                alt="weather icon" 
+                class="w-icon"
+                width="70"
+                />
+                <div class="temp">
+                    <strong>25.6&#176; C</strong>
+                </div> 
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">
+                    <strong>Thur</strong>
+                </div>
+                <img src="https://s1.twnmm.com/images/fr_ca/icons/wxicons_large/3.png" 
+                alt="weather icon" 
+                class="w-icon"
+                width="70"
+                />
+                <div class="temp"> 
+                    <strong>25&#176; C</strong>
+                </div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">
+                    <strong>Fri</strong>
+                </div>
+                <img src="https://s1.twnmm.com/images/fr_ca/icons/wxicons_large/32.png" 
+                alt="weather icon" 
+                class="w-icon"
+                width="70"
+                />
+                <div class="temp">
+                    <strong>25.6&#176; C</strong>
+                </div>  
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">
+                    <strong>Sat</strong>
+                    </div>
+                <img src="https://s1.twnmm.com/images/fr_ca/icons/wxicons_large/29.png" 
+                alt="weather icon" 
+                class="w-icon"
+                width="70"
+                />
+                <div class="temp">
+                    <strong>25.6&#176; C</strong>
+                </div>
+            </div>
+             <div class="weather-forecast-item">
+                <div class="day">
+                    <strong>Sun</strong>
+                </div>
+                <img src="https://s1.twnmm.com/images/fr_ca/icons/wxicons_large/3.png" 
+                alt="weather icon" 
+                class="w-icon"
+                width="70"
+                />
+                <div class="temp">
+                    <strong>25.6&#176; C</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+          <small>
+            <h3>
+            <a>Open-source</a> by Emma B.-Vachon
+            </h3>
+          </small>
+</div>
+  
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
